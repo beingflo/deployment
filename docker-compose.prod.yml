@@ -1,0 +1,20 @@
+services:
+  caddy:
+    image: caddy:2.6.2
+    container_name: caddy
+    restart: unless-stopped
+    networks:
+      - caddy_net
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2019:2019"
+      - "443:443/udp"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/site:/srv
+      - $PWD/data:/data
+      - $PWD/config:/config
+networks:
+  caddy_net:
+    name: "caddy_net"
