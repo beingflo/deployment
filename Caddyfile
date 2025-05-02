@@ -1,3 +1,7 @@
-marending.dev {
+marending.dev, www.marending.dev {
 	reverse_proxy marending-dev:3000
+}
+
+feedback.marending.dev {
+	reverse_proxy feedback-relay:8008
 }
