@@ -1,21 +1,6 @@
-{
-    servers {
-        metrics
-    }
-    admin :2019
-}
-
-marending.dev, www.marending.dev {
-	reverse_proxy marending-dev:3000
-}
-
 mariotto.ch, www.marioto.ch {
 	root * /srv/mariotto.ch
 	file_server
-}
-
-feedback.marending.dev {
-	reverse_proxy feedback-relay:8008
 }
 
 fieldnotes.land, www.fieldnotes.land {

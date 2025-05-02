@@ -5,3 +5,10 @@ marending.dev, www.marending.dev {
 feedback.marending.dev {
 	reverse_proxy feedback-relay:8008
 }
+
+jour.rest.quest {
+	root * /srv/jour
+	file_server
+
+	respond /health 203
+}
