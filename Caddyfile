@@ -6,13 +6,6 @@ feedback.marending.dev {
 	reverse_proxy feedback-relay:8008
 }
 
-jour.rest.quest {
-	root * /srv/jour
-	file_server
-
-	respond /health 203
-}
-
 rest.quest {
 	root * /srv/rest.quest
 	file_server
@@ -20,8 +13,22 @@ rest.quest {
 	respond /health 203
 }
 
+jour.rest.quest {
+	root * /srv/jour
+	file_server
+
+	respond /health 203
+}
+
 go.rest.quest {
 	root * /srv/go
+	file_server
+
+	respond /health 203
+}
+
+dd.rest.quest {
+	root * /srv/dd
 	file_server
 
 	respond /health 203
