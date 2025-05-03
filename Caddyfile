@@ -12,3 +12,10 @@ jour.rest.quest {
 
 	respond /health 203
 }
+
+rest.quest {
+	root * /srv/rest.quest
+	file_server
+
+	respond /health 203
+}
