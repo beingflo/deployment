@@ -19,3 +19,10 @@ rest.quest {
 
 	respond /health 203
 }
+
+go.rest.quest {
+	root * /srv/go
+	file_server
+
+	respond /health 203
+}
