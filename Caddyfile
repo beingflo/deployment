@@ -39,3 +39,23 @@ ledger.rest.quest {
 reflective.quest {
 	reverse_proxy reflective:3001
 }
+
+fieldnotes.land, www.fieldnotes.land {
+	root * /srv/fieldnotes.land
+
+	try_files {path} /index.html
+
+	file_server
+}
+
+write.fieldnotes.land {
+	root * /srv/write.fieldnotes.land
+
+	try_files {path} /index.html
+
+	file_server
+}
+
+api.fieldnotes.land {
+	reverse_proxy fieldnotes-api:5005
+}
