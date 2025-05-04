@@ -35,3 +35,7 @@ ledger.rest.quest {
 	root * /srv/ledger
 	file_server
 }
+
+reflective.quest {
+	reverse_proxy reflective:3001
+}
