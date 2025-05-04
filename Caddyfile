@@ -6,6 +6,10 @@ feedback.marending.dev {
 	reverse_proxy feedback-relay:8008
 }
 
+observatory.marending.dev {
+	reverse_proxy observatory:3000
+}
+
 mariotto.ch, www.marioto.ch {
 	root * /srv/mariotto.ch
 	file_server
