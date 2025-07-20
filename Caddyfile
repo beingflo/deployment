@@ -45,7 +45,7 @@ ledger.rest.quest {
 }
 
 reflective.quest {
-	reverse_proxy reflective:3001
+	reverse_proxy reflective:3000
 }
 
 fieldnotes.land, www.fieldnotes.land {
