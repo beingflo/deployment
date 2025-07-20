@@ -10,6 +10,10 @@ observatory.marending.dev {
 	reverse_proxy observatory:3000
 }
 
+events.marending.dev {
+	reverse_proxy observatory:3020
+}
+
 mariotto.ch, www.marioto.ch {
 	root * /srv/mariotto.ch
 	file_server
