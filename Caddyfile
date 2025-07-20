@@ -11,7 +11,7 @@ observatory.marending.dev {
 }
 
 events.marending.dev {
-	reverse_proxy observatory:3020
+	reverse_proxy grafana:3020
 }
 
 mariotto.ch, www.marioto.ch {
