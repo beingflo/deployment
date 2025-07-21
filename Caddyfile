@@ -14,6 +14,10 @@ events.marending.dev {
 	reverse_proxy grafana:3000
 }
 
+push.events.marending.dev {
+	reverse_proxy events:3000
+}
+
 mariotto.ch, www.marioto.ch {
 	root * /srv/mariotto.ch
 	file_server
